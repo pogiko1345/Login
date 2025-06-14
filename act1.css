@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   }
+   body {
+    background-color: #f5f5f5;
+    color: #333;
+   }
+   .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+   }
+   .top-bar {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+   }
+   .logo {
+    font-size: 18px;
+   }
+   .hero {
+    display: flex;
+    background-color: #555;
+    color: #fff;
+    padding: 40px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+   }
+   .hero-left,
+   .hero-right {
+    flex: 1;
+    min-width: 300px;
+   }
+   .hero-left h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+   }
+   .hero-left p {
+    margin-bottom: 20px;
+   }
+   .cta-link {
+    color: #fff;
+    text-decoration: underline;
+   }
+   .signup-box {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+   }
+   .signup-box h2 {
+    margin-bottom: 10px;
+   }
+   .google-btn {
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+   }
+   .divider {
+    text-align: center;
+    margin: 10px 0;
+   }
+   form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+   }
+   .name-fields {
+    display: flex;
+    gap: 10px;
+   }
+   .name-fields input {
+    flex: 1;
+   }
+   form small {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+   }
+   form button {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+   }
+   .testimonials {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+   }
+   .testimonial {
+    flex: 0 0 80%;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   }
+   .testimonial-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+   }
+   .footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 40px 20px;
+   }
+   .footer h2 {
+    margin-bottom: 10px;
+   }
+   /* Mobile Responsive Adjustments */
+   @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-left,
+    .hero-right {
+      width: 100%;
+    }
+    .testimonials {
+      padding: 10px;
+      gap: 16px;
+    }
+    .testimonial {
+      flex: 0 0 90%;
+    }
+   }

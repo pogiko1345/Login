@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Malupiton</title>
+<link rel="stylesheet" href="act1.css" />
+</head>
+<body>
+<!-- Top Bar -->
+<header class="top-bar">
+<div class="container">
+<span class="logo">🌐 My Superhero's</span>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero container">
+<div class="hero-left">
+<h1>Malupiton Core</h1>
+<p>Knock Knock Man bluetooth bluetooth who? You know what to do with a big fat butt bluetooth tooth tooth.</p>
+<a href="#" class="cta-link">👁️ Try it now</a>
+</div>
+<div class="hero-right">
+<div class="signup-box">
+<h2>Join Us for Free</h2>
+<p>Sign up instantly</p>
+<button class="google-btn">G Sign up with Google</button>
+<p class="divider">Or create an account with your email</p>
+<form>
+<div class="name-fields">
+<input type="text" placeholder="First name" />
+<input type="text" placeholder="Last name" />
+</div>
+<input type="email" placeholder="Email address" />
+<input type="password" placeholder="Create a password" />
+<small>Password must be at least 7 characters and include a letter and a number.</small>
+<button type="submit">Create Account</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="testimonials">
+<div class="testimonial">
+<img src="Malupiton.png" alt="User Icon" class="testimonial-icon" />
+<p>"This platform revolutionized the way I manage projects."</p>
+</div>
+<div class="testimonial">
+<img src="mamawagmokopaloah.png" alt="User Icon" class="testimonial-icon" />
+<p>"The interface is intuitive and the support team is fantastic."</p>
+</div>
+<div class="testimonial">
+<img src="papamalupiton.png" alt="User Icon" class="testimonial-icon" />
+<p>"Collaboration has never been easier thanks to this app."</p>
+</div>
+<div class="testimonial">
+<img src="latin.png" alt="User Icon" class="testimonial-icon" />
+<p>"Boosted our team's productivity within the first week."</p>
+</div>
+<div class="testimonial">
+<img src="batman.png" alt="User Icon" class="testimonial-icon" />
+<p>"Reliable and efficient — perfect for fast-paced workflows."</p>
+</div>
+<div class="testimonial">
+<img src="joker.png" alt="User Icon" class="testimonial-icon" />
+<p>"Flexible enough to adapt to all our unique needs."</p>
+</div>
+<div class="testimonial">
+<img src="superman.png" alt="User Icon" class="testimonial-icon" />
+<p>"A game-changer for remote teams everywhere."</p>
+</div>
+<div class="testimonial">
+<img src="wolvarine.png" alt="User Icon" class="testimonial-icon" />
+<p>"The best tool I've used to keep my projects on track."</p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<h2>Ready to get started?</h2>
+<p>Sign up today and make your workflow smarter, faster, and easier.</p>
+</footer>
+<!-- Script for horizontal scroll -->
+<script>
+   const testimonials = document.querySelector('.testimonials');
+   testimonials.addEventListener('wheel', (evt) => {
+     if (window.innerWidth > 768) {
+       evt.preventDefault();
+       testimonials.scrollLeft += evt.deltaY;
+     }
+   });
+</script>
+</body>
+</html>
